@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-strict-di ng-controller="LandingController">
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+
+    <title>UVic Web Dev Club - The neatest club on campus!</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+    <link rel="shortcut icon" href="img/favicon.ico?v=3" type="image/x-icon" />
+
+    <!-- font files -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- facebook thumbnail -->
+    <meta property="og:url"          content="http://uvic.club/" />
+    <meta property="og:image"        content="http://uvic.club/img/facebeefbanner.jpg" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name"    content="HoverCards" />
+
+</head>
+<body>
+    <nav>
+        <div class="close-menu triggermenu rippleblack" ng-class="{naviphone: isIOS}">
+            <div class="x-button"></div>
+        </div>
+        <div class="killburgers">
+            <p>Hamburger menu's are dead :(</p>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <a class="header-logo" href="/"><b>UVic Webdev</b></a>
+            <div class="nav triggermenu">
+                <div class="nav-button"><i></i></div>
+            </div>
+            <div class="headermenutrigger triggermenu rippleblack"></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="cta">
+                <h1 class="animated fadeInLeft">So, you're <br>looking to join <br>a club. Look no further my friend.</h1>
+                <p><b>UVic Web Dev Club</b> is a community that aims to help students bring ideas to life. No matter what facility you're in, or skill set you have, we're here to help. <span></span></p>
+                <div class="changeimage">
+                    <a target="_blank" href="https://www.facebook.com/groups/UVic.io/" class="app-button fb-button"><i class="zmdi zmdi-facebook"></i> Join our Facebook group</a>
+                </div>  
+            </div>
+            <div class="shrug-guy animated bounceIn">
+                <div class="col-6 shrugslide2">
+                    <img src="img/shrugguy-phew.png" class="shrugimg2">
+                    <div class="first-message animated bounceInUp">After UVic Web Dev I was found</div>
+                </div>
+                <div class="col-6 shrugslide1">
+                    <img class="shrugimg" src="img/shrugguy-withdoge.png">
+                    <div class="first-message animated bounceInUp">Before UVic Web Dev I was Lost</div>
+                </div>
+            </div>
+        </div>
+        <a class="btn-arrow rippleblack" href="#app"></a>
+    </section>
+    <section class="app" id="app">
+        <div class="container">
+            <div class="cta">
+                <h1>We make <br>cool stuff that<br> is used by people on the internet.</h1>
+                <p>If you're wanting to spend your future in tech then this is the right place to get your foot in the door.  Every week we nerd out about interface design, modern web languages, and cool stuff that's happening in the now. We bring in smart people from cool companies, host hackathons, and overall just have a great time.</p>
+            </div>
+            <div class="app-hand"></div>
+        </div>
+    </section>
+
+    <section class="appdownload">
+        <div class="cover"></div>
+        <div class="container">
+            <div class="cta">
+                <h1>Look how much fun these people are having. That could be you!</h1>
+                <p>There's lots of reasons why people <i class="zmdi zmdi-favorite" style="font-size:16px;color:red;position:relative;top:-2px;"></i> UVic Web Dev Club. But don't take our word for it, check out what our members are saying on our facebook group!</p>
+                <a target="_blank" href="https://www.facebook.com/groups/UVic.io/" class="app-button fb-button"><i class="zmdi zmdi-facebook"></i> Join our Facebook group</a>
+            </div>
+        </div>
+    </section>
+    <section class="realtalk">
+        <div class="container">
+            <div class="cta">
+                <h1>Here's some cool stuff UVic students in our club have produced:</h1>
+            </div>
+            <div class="socialtest">
+                <div class="row">
+                    <div class="col-6 hideme">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="socialfill"></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="socialfill"></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="socialfill socialfill-2"></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="socialtext whitecola" style="background:url('img/imagethree.png');background-size:cover"><b><a href="http://cssfacegen.uvic.club/">CSS Face Generator</a></b></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="twitterfull">
+                                    <b><a href="https://chrome.google.com/webstore/detail/ratemyuvic/efmdmfeaojmebljkgpojibfkppjgbhkn" target="_blank">RateMyUVic</a></b>
+                                    <p>Finds UVic professor stats from RateMyProfessor.com. Simply open up the UVic course webpage and hover over outlined professors names and their RateMyProfessor information will be revealed. </p>
+                                    <strong>- Made by Austin Hendy</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="imageleft" style="background:url('img/imageone.png');background-size:cover"></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="socialtext firstst">
+                                    <b><a href="https://www.truckplease.com/" target="_blank">TruckPlease</a></b>
+                                    <p>Get quotes from local movers. Our movers compete to give you the best possible rate on your move.</p>
+                                    <strong><a href="https://twitter.com/truckplease">@truckplease</a></strong>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="socialtext">
+                                    <b><a href="http://1ke.co/" target="_blank">1ke</a></b>
+                                    <p>1KE.CO is an online collaborative code academy for beginners in web development.</p>
+                                    <strong><a href="http://1ke.co/page/aboutus">About 1ke</a></strong>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="imageright" style="background:url('img/imagefive.png');background-size:cover"></div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="imageleft" style="background:url('img/imagefour.png');background-size:cover;"></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="socialtext">
+                                    <b><a href="http://hovercards.com/">HoverCards</a></b>
+                                    <p>HoverCards is a chrome extension that lets you preview social links from youtube, twitter, reddit, soundcloud, imgur, & instagram.</p>
+                                    <strong><a href="http://twitter.com/@HoverCards">@HoverCards</a></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="snetworks">
+        <div class="container">
+            
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="logo-bottom">&copy; UVic.club 2015 </span></div>
+                <div class="link-wraps">
+                    <a href="mailto:kelseylegault@gmail.com" target="_blank">Email Us</a>
+                    <div class="social-links">
+                        <a  href="https://www.facebook.com/groups/UVic.io/" target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                        <a href="https://twitter.com/uvic_io" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="website-mask triggermenu">
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

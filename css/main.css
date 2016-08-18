@@ -1,0 +1,1339 @@
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;		
+}
+html {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	margin:0px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'NeuzeGroTReg', sans-serif;
+}
+@font-face {
+  font-family: 'avant-garde';
+  src: url('../fonts/avant-garde.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avant-garde.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/avant-garde.woff') format('woff'),
+       url('../fonts/avant-garde.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'NeuzeGroTReg';
+  src: url('../fonts/NeuzeGroTReg.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NeuzeGroTReg.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NeuzeGroTReg.woff') format('woff'),
+       url('../fonts/NeuzeGroTReg.svg')  format('svg')
+}
+body, html {
+	overflow-x: hidden
+}
+/*header*/
+.header {
+	line-height: 76px;
+	z-index: 2;
+	height: 76px;
+	position: absolute;
+	width: 100%;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateZ(0);
+	z-index: 9999;
+}
+fieldset {
+    border: 0;
+    margin: none;
+    padding: none;
+    position: relative;
+}
+.header .container {
+	overflow: visible;
+	padding: 0px 20px;
+	max-width:1180px;
+	width: 100%;
+	height: 75px;
+}
+.header-logo {
+	height: 100%;
+	position: absolute;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	width: 100px;
+	background-size: auto 20px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+.header-logo img {
+	height: 40px;
+	display: inline;
+}
+
+a.header-logo {
+	text-decoration: none;
+	color: #727272;
+}
+
+.nav {
+	float: right;
+}
+
+.login-text {
+	display: inline-block;
+	padding-right: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: 'NeuzeGroTReg'
+}
+.nav-button {
+	width: 24px;
+	height: 20px;
+	display: inline-block;
+	top: 5px;
+	position: relative;
+}
+.nav-button:before, .nav-button:after, .nav-button i  {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	top:0px;
+	left: 0px;
+	background: #000;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out
+}
+.nav-button i {
+	top: 8px;
+}
+.nav-button:after {
+	top:16px;
+	content: ""
+}
+
+/*hero*/
+.hero {
+	padding: 0px 0px 0px;
+	height:700px;
+	position: relative;
+	background: #fff;
+}
+.hero .container {
+	position: relative;
+	min-height: 700px;
+	padding-top: 76px;
+	padding: 84px 0px 0px 0px;
+	max-width: 1180px;
+	overflow: hidden;
+}
+
+
+.cta h1 {
+	color: #000;
+	letter-spacing: -1px;
+	font-size: 50px;
+	margin:0px;
+	font-family: 'avant-garde', sans-serif;
+	font-weight: 800;
+	line-height: 55px;
+	position: relative;
+}
+.cta h1 b {
+	color: #000
+}
+.app .cta h1, .appdownload .cta h1{
+	color: #212121;
+}
+.app .cta {
+	z-index: 3;
+	position: relative;
+}
+.app .cta {
+	padding-top: 155px;
+}
+.app .cta a {
+	color: white;
+	background: #212121;
+}
+.cta a {
+	margin-top: 40px;
+	min-width: 200px;
+	text-align: center;
+}
+.cta p {
+	color: #727272;
+	font-size: 20px;
+	margin: 35px 0px 0px;
+	font-weight: 300;
+	line-height: 26px;
+	font-family: 'NeuzeGroTReg', serif;
+}
+.cta p a {
+
+}
+.hero .cta p span {
+	font-family: 'none'
+}
+
+.cta h1 img {
+
+}
+.cta {
+	max-width: 480px;
+	padding:80px 0px 0px 20px;
+	position: relative;
+	z-index: 400;
+}
+.cta a i {
+	margin-right: 6px;
+}
+.shrug-guy {
+	padding: 0px 20px;
+	margin:auto;
+	position: absolute;
+	right: 50px;
+	max-width: 730px;
+	top: -26px;
+	width: 100%;
+	display: block;
+	margin:auto;
+	z-index: 60;
+}
+
+.shrug-guy img {
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0px;
+}
+img.shrugimg2 {
+	display: none;
+}
+
+/*header triangles*/
+
+
+.container {
+	margin: auto;
+	max-width: 1180px;
+	position: relative;
+}
+.app {
+	background: #F5F5F5;
+	height: 700px;
+	z-index:3;
+	position: relative;
+}
+.app .container {
+
+}
+
+.app-hand {
+	width: 100%;
+	height: 850px;
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-position: center -340px;
+	background-image: url('../img/phones-rip.png');
+	position: absolute;
+	top: 0px;
+}
+.rippleblack, .ripple {
+font-weight: bold;
+position: relative;
+overflow: hidden;
+display: inline-block;
+transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+transition-delay: 0.2s;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.36);
+}
+.rippleblack:active, .ripple:active {
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+	transition-delay: 0s;
+}
+.close-menu {
+	height: 76px;
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+	box-shadow: none;
+}
+.close-menu:hover {
+	cursor: pointer;
+}
+.x-button {
+	display: inline-block;
+	width: 27px;
+	height: 24px;
+	top: 18px;
+	position: relative;
+}
+.x-button:after, .x-button:before {
+	content: "";
+	height: 3px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #212121;
+	width: 100%;
+   -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.x-button:before {
+   -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);	
+}
+.headermenutrigger {
+	display: inline-block;
+	position: absolute;
+	z-index: 999999;
+	right: 0px;
+	width: 125px;
+	height: 76px;
+	box-shadow: none;
+	overflow: visible !important
+}
+
+.headermenutrigger-fixed {
+	-webkit-transform: translateZ(0);
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+.headermenutrigger:active, .close-menu:active {
+	box-shadow: none;
+}
+.headermenutrigger:hover {
+	cursor: pointer;
+}
+  .circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%; 
+    -webkit-animation: scale-circle 1.3s;
+    -moz-animation: scale-circle 1.3s;
+    -o-animation: scale-circle 1.3s;
+    animation: scale-circle 1.3s;
+  }
+  .rippleblack .circle {
+    background: rgba(0,0,0,.4)
+  }
+  @-webkit-keyframes scale-circle {
+    from {
+      transform: scale(.2);
+      -webkit-transform: scale(.2);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(100);
+      -webkit-transform: scale(100);
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes scale-circle {
+    from {
+      transform: scale(.2);
+      -moz-transform: scale(.2);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(100);
+      -moz-transform: scale(100);
+      opacity: 0;
+    }
+  }
+  @-o-keyframes scale-circle {
+    from {
+      transform: scale(.2);
+      -o-transform: scale(.2);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(100);
+      -o-transform: scale(100);
+      opacity: 0;
+    }
+  }
+
+  @keyframes scale-circle {
+    from {
+      transform: scale(.2);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+  }
+
+  .btn-arrow {
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    width: 54px;
+    height: 54px;
+    bottom: -25px;
+    right: 40px;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 400;
+    background: white;
+  }
+  .btn-arrow:before, .btn-arrow:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #615F61;
+    left: 17px;
+    top: 27px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .btn-arrow:after {
+    left: 24px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+.socialshare {
+	background: #5a317c;
+	position: relative;
+	z-index: 50
+}
+.socialshare .container {
+	max-width: 1180px;
+	padding: 40px 20px;
+	z-index: 6000;
+	position: relative;
+}
+.app-button {
+	background: white;
+	margin-right: 10px;
+	padding: 13px 25px;
+	font-weight: 600;
+	font-size: 14px;
+	border-radius: 2px;
+	text-decoration: none;
+	color: rgba(0,0,0,0.5);
+	border-radius: 30px;
+	box-shadow: none;
+	font-family: "Work Sans", sans-serif;
+}
+
+
+.appdownload {
+	min-height:700px;
+	background-image: url("../img/pizzaeaters.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 70px;
+	background-color: #f4f4f5
+}
+.appdownload .cover {
+	background: #e7e8f6;
+	opacity: .95;
+	height: 100%;
+	height: 700px;
+	width: 50%;
+	position: absolute;
+	left: 0px;
+}
+.appdownload h3 b {
+	font-family: 'Goudy Bookletter 1911', serif
+}
+.appdownload h3 {
+	font-family: 'NeuzeGroTReg', sans-serif;
+	font-weight: bolder;
+}
+.appdownload p b {
+	font-family: 'NeuzeGroTReg', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12px;
+	position: relative;
+	top: -8px;
+}
+.appdownload .footnote {
+	font-size:11px;
+	line-height: 12px;
+	position: relative;
+	margin-top:52px;
+}
+.appdownload .footnote span {
+	font-family: 'NeuzeGroTReg', sans-serif;
+	font-size: 11px;
+	line-height: 12px !important;
+	font-style: normal
+}
+.realtalk {
+	background: #F5F5F5;
+	height: 700px;
+	padding-bottom: 160px;
+}
+.realtalk .cta h1 {
+	margin-bottom: 0px;
+	padding-bottom: 0px
+}
+.realtalk .cta h1:after {
+	display: none;
+}
+.row {
+	overflow: hidden;
+}
+.col-6 {
+	width: 50%;
+	float: left;
+}
+.col-12 {
+	width: 100%;
+	float: left;
+}
+.col-3 {
+	float: left;
+	width: 25%;
+	background: white;
+}
+.imageleft, .socialtext, .imageright {
+	height: 285px;
+	position: relative;
+}
+.imageleft {
+
+}
+
+.imageright {
+	background: green
+}
+.socialtext {
+	background: #fff;
+	padding: 30px;
+}
+.socialtext a {
+    color: #212121;
+}
+.twitterfull a {
+    color: white;
+}
+.socialtext b, .twitterfull b {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	position: relative;
+	z-index: 2;
+}
+.socialtext p, .twitterfull p {
+	font-family: 'NeuzeGroTReg', serif;
+	font-size: 17px;
+}
+.twitterfull p {
+	font-size: 21px;
+}
+.snetworks .container {
+
+}
+.fb-button {
+	background: #3b5998;
+	color: white;
+	font-weight: bold;
+}
+.snetworks {
+	background: #F5F5F5;
+	height: 460px;
+}
+.socialtext strong, .twitterfull strong {
+	display: block;
+	position: absolute;
+	width: 200px;
+	bottom: 35px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #212121;
+	font-size: 12px;
+	font-family: 'NeuzeGroTReg', sans-serif;
+}
+.twitterfull strong {
+	color: white
+}
+.socialtext strong span, .twitterfull strong span {
+	width: 34px;
+	height: 34px;
+	background: #212121;
+	display: inline-block;
+	border-radius: 50%;
+	line-height: 36px;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	margin-right: 10px;
+}
+.socialtest {
+	margin-top: -87px;
+	position: relative;
+	padding: 0px 20px;
+}
+.socialfill {
+	height: 285px;
+}
+.whitecola b {
+	color: black
+}
+.twitterfull {
+	padding: 30px;
+	background: #212121;
+	color: white;
+	height: 285px;
+	position: relative;
+}
+footer {
+
+}
+footer .container {
+	padding: 0px 20px;
+}
+.footer-container {
+	padding: 50px 0px 50px;
+	text-align: right;
+}
+.footer-container a {
+	color: #212121;
+	margin-left: 50px;
+	opacity: .5;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.logo-bottom {
+	float: left;
+	color: #212121;
+	opacity: .5;
+	position: relative;
+}
+.logo-bottom span {
+	padding-left: 40px;
+}
+.logo-bottom img {
+	width: 30px;
+	position: absolute;
+	top: -6px;
+	left: 0px;
+}
+.footer-container a i {
+	font-size: 17px;
+}
+nav {
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	overflow: auto;
+	background: #F5F5F5;
+	z-index: 10000000;
+	right: 0px;
+	top: 0;
+	margin-right: -240px;
+	bottom: 0;
+	display: none;
+}
+.signininputs input {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 8.5px 16px;
+	background-color: #fff;
+	border: 1px solid rgba(30,32,37,.23);
+	line-height: 1.25;
+	font-size: 18px;
+	margin-top: 20px;
+	width: 100%;
+
+}
+.signininputs .app-button {
+	background: #212121;
+	color: white;
+	margin: 20px 0px;
+	border: none;
+	width: 100%;
+}
+.signininputs .app-button i {
+	margin-right: 10px;
+}
+.signininputs b {
+	color: #212121;
+	font-size: 14px;
+}
+.signininputs p {
+	margin-top:10px;
+	font-size: 14px;
+}
+.signininputs p a {
+	color: #212121
+}
+::-webkit-input-placeholder {
+   font-family: 'NeuzeGroTReg', sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'NeuzeGroTReg', sans-serif;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'NeuzeGroTReg', sans-serif;  
+}
+
+:-ms-input-placeholder {  
+   font-family: 'NeuzeGroTReg', sans-serif;  
+}
+.signininputs input:focus {
+	border-color: #212121;
+	outline: 0;
+}
+.appdownloads {
+	margin: 40px 0px;
+}
+.appdownloads a{
+	height: 61px;
+	margin-top: 20px;
+	background-color: rgba(0,0,0,.09);
+	display: block;
+	border: 1px solid rgba(0,0,0,.1)
+}
+.iphone-download {
+	background: url('../img/appstore.png');
+}
+.android-download {
+	background: url('../img/googleplay.png');
+}
+.iphone-download, .android-download, .window-download {
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.shownav {
+	display: block;
+}
+
+.killburgers {
+	padding: 0 30px;
+}
+.test-scroll {
+	width: 100%;
+	padding: 0px 20px;
+}
+.feets {
+	background: url('../img/feets.png');
+	width: 100%;
+	background-size: 77%;
+	background-position:-10px 0px;
+	background-repeat: no-repeat;
+	height: 400px;
+	float: left;
+}
+.fb_iframe_widget {
+	top: -5px;
+	margin-left: -18px;
+}
+/*temporary hide*/
+.app-hand {
+	
+}
+.first-message {
+	display: none;
+}
+.link-wraps {
+	display: inline;
+}
+.link-wraps a:first-of-type {
+	margin-left: 0px;
+}
+.playbutton {
+  color: white;
+  text-align: center;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-size: 24px;
+	transition: all .5s ease-in-out;
+	background:#979797;
+}
+.whitecola:hover {
+}
+.triggeryoutube:hover .playbutton {
+	background: white;
+	color: black;
+	cursor: pointer
+}
+.website-mask, .website-mask2 {
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100000;
+	position: fixed;
+	display: none;
+}
+.yt-popup {
+	width: 700px;
+	height: 393px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background:black;
+  text-align: center;
+  z-index: 2;
+  display: none;
+ }
+ .xbutton {
+ 	position: absolute;
+ 	right: -25px;
+ 	top: -25px;
+ 	width: 50px;
+ 	height: 50px;
+ 	background: #9E9E9E;
+ 	color: white;
+ 	font-size: 24px;
+ 	line-height: 50px;
+ 	transition: all .5s ease-in-out;
+}
+.changeimage {
+	display: inline-block;
+}
+.changeimage a {
+	display: inline-block;
+}
+.xbutton:hover {
+	background: white;
+	color: black;
+	cursor: pointer
+}
+
+.social-links {
+	display: inline;
+	padding-left: 50px;
+}
+@media (max-width: 1120px) {
+	.shrug-guy img {
+		left: 100px;
+	}
+	.imageleft, .socialtext, .imageright, .socialfill {
+		height: 250px;
+	}
+	.socialtext p {
+		font-size: 15px;
+	}
+	.app-hand {
+		background-position:50px -290px 
+	}
+
+}
+@media (max-width: 1030px) {
+	.appdownload .footnote {
+		margin-top:22px;
+	}
+	.app .cta {
+		padding-top:200px;
+	}
+	.app-hand {
+		background-position:50px -290px 
+	}
+	.socialtest {
+		margin-top:30px;
+	}
+	.socialtext p {
+		font-size: 14px;
+	}
+	.snetworks {
+		height: 520px;
+	}
+	.imageleft, .socialtext, .imageright, .socialfill, .twitterfull {
+		height: 230px;
+	}
+	.twitterfull p {
+		font-size: 17px;
+	}
+	.shrug-guy img {
+		left: 0px
+	}
+	.first-message {
+		padding: 20px;
+		border-radius: 2px;
+		background: white;
+		z-index: 2;
+		position: absolute;
+		left: 50%;
+		margin-left: -130px;
+		top: 190px;
+		display: inline-block;
+		width: 260px;
+		box-shadow:0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16)
+	}
+	.first-message:after {
+		content: "";
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		margin-left: -10px;
+		z-index: 2;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent #fff transparent;
+	}
+	.hero .cta, .appdownload .cta {
+		max-width: 100%;
+		padding: 20px;
+		text-align: center;
+		margin: auto;
+		z-index: 200
+	}
+	.cta h1:after {
+		display: none;
+	}
+	.cta h1 {
+		font-size: 39px;
+		line-height: 50px;
+	}
+	.cta h1 b {
+		margin-left: 14px;
+		color: white;
+	}
+	div br {
+		display: none;
+	}
+	.cta p {
+		margin: 20px auto 0px;
+		max-width: 670px;
+	}
+	.shrug-guy {
+		display: block !important;
+		position: relative;
+		right: 0px;
+		max-width: 100%;
+		overflow: auto;
+		top: 20px;
+		padding: 0px 20px;
+	}
+	.shrug-guy img {
+		width: 100%;
+		float: right;
+		display: block !important;
+		position: relative;
+	}
+	.shrug-guy .col-6:first-of-type img {
+		padding-left: 15px;
+	}
+	.shrug-guy .col-6 {
+		text-align: center;
+		position: relative;
+	}
+	.app {
+		z-index: 150;
+	}
+	.socialshare {
+		z-index: 151;
+	}
+	.hero .shrug-guy .col-6 {
+		float: right;
+	}
+	.appdownload .cover {
+		height: auto;
+	}
+	.appdownload .cta {
+		background: rgba(231, 232, 246, .9);
+		padding: 20px 10px
+	}
+	.appdownload .cta h1 {
+
+	}
+	.hero .container {
+		max-height: 700px;
+	}
+	.socialfill {
+		display: none;
+	}
+	.socialfill-2 {
+		display: block;
+	}
+	.feets {
+		display: none;
+	}
+	.snetworks {
+		height: 320px;
+	}
+	.socialtext strong, .twitterfull strong {
+		display: none;
+	}
+}
+@media (max-width: 990px) {
+	.app-hand {
+		background-position:50px -220px;
+		height: 700px;
+		background-size: 1000px;
+	}
+}
+
+@media (max-width: 780px) {
+	.app .cta {
+		text-align: center;
+		padding-top:30px;
+		max-width: 100%;
+	}
+	.realtalk, .snetworks {
+		display: none;
+	}
+	.app-hand {
+		background-position:-350px 100px;
+		background-size: 1200px;
+	}
+	.cta h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}	
+	.cta p {
+		font-size: 18px;
+	}
+	.shrug-guy {
+		text-align: center;
+	}
+	.hero .shrug-guy .col-6 {
+		margin: auto;
+		float:none;
+		display: inline-block;
+		width: 70%;
+	}
+	.cta {
+		padding-bottom: 0
+	}
+	.hideme {
+		display: none;
+	}
+	.socialtest .row:first-of-type .col-6:last-of-type {
+		width:100%;
+		max-width: 500px;
+		float: none;
+		margin:auto;
+	}
+	.realtalk .cta {
+		max-width: 100%;
+		padding: 30px 20px;
+		text-align: center;
+	}
+	.socialtest {
+		margin-top:0px;
+	}
+	.imageleft, .socialtext, .imageright, .socialfill, .twitterfull {
+		height: 250px;
+		width: 250px;
+	}
+
+	.snetworks {
+		height: 480px;
+	}
+	.logo-bottom span {
+		display: none;
+	}
+	.socialshare .container {
+		text-align: center;
+	}
+	.snetworks {
+		height: 250px;
+	}
+	#twitter-widget-1 {
+		margin-left: 30px !important
+	}
+	.shrugslide1 {
+		display: block !important;
+	}
+	.shrugslide2 {
+		display: none !important;
+	}
+	.shrug-guy {
+		overflow: hidden;
+	}
+	.socialtext strong, .twitterfull strong {
+		display: block;
+	}
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both;
+} 
+
+@-webkit-keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        -webkit-transform: translateY(-30px); 
+    } 
+    80% { 
+        -webkit-transform: translateY(10px); 
+    } 
+    100% { 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        transform: translateY(-30px); 
+    } 
+    80% { 
+        transform: translateY(10px); 
+    } 
+    100% { 
+        transform: translateY(0); 
+    } 
+} 
+
+.bounceInUp { 
+    -webkit-animation-name: bounceInUp; 
+    animation-name: bounceInUp; 
+}
+}
+@media (max-width: 640px) {
+	.cta h1 {
+		font-size: 25px;
+	}
+	.cta p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.hero .shrug-guy .col-6 {
+		width: 90%;
+	}
+	.first-message {
+		top:160px;
+	}
+	.app-hand {
+		background-position:-350px 100px;
+		background-size: 1000px;
+	}
+	
+}
+@media (max-width: 580px) {
+	.footer-container a:nth-of-type(4) {
+		margin-left: 0px;
+	}
+	.social-links {
+		display: block;
+		padding: 0;
+		margin: 10px 0px;
+	}
+
+	.social-links a:last-of-type {
+		margin-right: 0px;
+	}
+	.logo-bottom{
+		display: block;
+		float: none;
+	}
+	.logo-bottom img {
+		position: relative;
+		top: auto;
+		display: block;
+		margin: auto
+	}
+	.footer-container {
+		text-align: center;
+		padding: 0px;
+	}
+	.footer-container a {
+		margin: 0px 10px;
+	}
+	.footer-container a:first-of-type {
+	}
+	.link-wraps {
+		display: block;
+		float: right;
+		width: 100%;
+		top: -40px;
+	}
+	.logo-bottom {
+		float: right;
+		display: block;
+		top: 80px;
+		width: 100%
+	}
+	.logo-bottom {
+		top: 92px;
+	}
+}
+@media (max-width: 500px) {
+	.app-hand {
+		background-position:-400px 100px;
+		background-size: 900px;
+	}
+	.hero .shrug-guy .col-6 {
+		width: 90%;
+	}
+	.hero .container {
+		padding:0px;
+	}
+	.hero .cta {
+		padding:100px 20px 0px 20px 
+	}
+	.first-message {
+		top:140px;
+	}
+	.cta {
+		padding: 20px 10px
+	}
+	.cta h1 {
+		margin-bottom: 0px;
+		line-height: 27px;
+		font-size: 22px !important;
+		padding-bottom: 0px;
+	}
+	.appdownload {
+		background-position: center left -50px; 
+	}
+	.hero .cta h1 b {
+	}
+	.cta p {
+		margin: 10px auto;
+	}
+	.cta a {
+		margin-top:20px;
+		font-size: 14px;
+	}
+	.hero .shrug-guy .col-6 {
+		width: 96%;
+	}
+	.app-button {
+		padding: 12px 10px;
+	}
+	.header-logo {
+		background-size: auto 15px;
+	}
+	.hero .shrug-guy .col-6 {
+		width: 100%
+	}
+	.shrug-guy {
+		padding: 0px 10px;
+	}
+	.snetworks {
+		height: 380px;
+	}
+	.imageleft, .socialtext, .imageright, .socialfill, .twitterfull {
+		height: 200px;
+		width: 200px;
+	}
+	.socialtest .row:first-of-type .col-6:last-of-type {
+		max-width: 400px;
+	}
+	.socialtest {
+		padding: 0
+	}
+	.socialtext {
+		padding: 20px
+	}
+	.snetworks {
+		height:30px;
+	}
+	.appdownload .footnote {
+		margin-top:12px;
+	}
+	.socialtext strong, .twitterfull strong {
+		display: none
+	}
+}
+@media (max-width: 400px) {
+	.app-hand {
+		background-position:-350px 100px;
+		background-size: 800px;
+	}
+	.cta a {
+		margin-top:10px;
+		font-size: 14px;
+		margin-right: 0px;
+	}
+	.snetworks {
+		height: 30px;
+	}
+	footer {
+		height: 150px;
+	}
+	.imageleft, .imageright {
+		display: none;
+	}
+	.col-6 {
+		width: 100%
+	}
+	.socialtest {
+		padding: 0px 20px
+	}
+	.socialtext {
+		width: 100%;
+		padding: 30px;
+		margin-top: 30px;
+		height:auto;
+	}
+	.firstst {
+		margin-top: 0px
+	}
+	
+	.hero .cta a {
+		margin:10px 0 0 0;
+	}
+	.shrug-guy {
+		top:10px;
+	}
+	.app-button {
+		padding: 15px 15px;
+	}
+	.fb_iframe_widget {
+		display: block; 
+		position: static; 
+	}
+	.fb_iframe_widget {
+		top: auto; 
+		margin-left: 0; 
+	}
+
+	.socialtext strong, .twitterfull strong {
+		display: block;
+		position: static;
+	}
+}
+
+
+
+
+
+
+
+
+
+.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }
